@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.video{
+    position: fixed;
+    z-index: -2;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.color-g{
+    position: fixed;
+    background: linear-gradient(25deg,rgba(90, 3, 3, 0.616),rgba(0, 9, 10, 0.9) 20%,rgba(1, 65, 17, 0.6) );
+    width: 100vw;
+    height: 100vh;
+}
+.bg-img{
+    height: 200vh;
+    z-index: -2;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    background-size: contain;
+    background-image: linear-gradient(to right,rgba(4,4,4,10),rgba(0,0,0,0),rgba(0,0,0,0),rgba(4,4,4,10)),url('https://i0.wp.com/maggamer.com/wp-content/uploads/2018/07/website-backgrounds-texture-elegant-abstract-patterns-hexagons-textures-backgrounds-honey-b-of-website-backgrounds-texture.jpg?ssl=1');
+}
+.container-fluid{
+    width: 90vw;
+    height: 80vh;
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 1px 210px 1px rgba(3, 68, 63, 0.6);
+    position: absolute;
+    margin: 5% 5% 5% 5%;
+    border: 0.1px solid rgba(3, 68, 63, 0.6);
+    background: linear-gradient(25deg,rgba(1, 34, 31, 0.2),rgba(1, 22, 20, 0.2));
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 1px;
+}
+.login-form{
+    padding: 4%;
+}
+legend{
+    color: aquamarine;
+    text-shadow: 1px 1px 15px aquamarine;
+    font-weight: 900;
+}
+.email{
+    background: transparent;
+    border-bottom: 2px solid turquoise;
+    line-height: 40px;
+    width: 140px;
+    margin-top: 20px;
+    outline: none;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    color: aquamarine;
+    font-weight: 900;
+    font-family: serif;
+}
+form{
+    width: 25%;
+    height: auto;
+}
+input[placeholder="Enter G-mail"]{
+    text-shadow: 1px 2px 3px black;
+}
+.pass{
+    background: transparent;
+    border-bottom: 2px solid turquoise;
+    line-height: 40px;
+    margin-top: 20px;
+    width: 140px;
+    outline: none;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    color: aquamarine;
+    font-weight: 900;
+    font-family: serif;
+}
+.login{
+    width: 250px;
+    line-height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: turquoise;
+    margin-top: 40px;
+    border: transparent;
+    animation: log-bu 4s infinite linear;
+    transition: 0.3s all;
+    box-shadow: 1px 1px 120px turquoise;
+}
+.login:hover{
+    border: 1px solid turquoise;
+    background-color: transparent;
+    text-shadow: 1px 1px 50px turquoise;
+    color: turquoise;
+    box-shadow: none;
+    transform: scale(105%);
+}
+.g-login{
+    width: 250px;
+    line-height: 40px;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    margin-top: 20px;
+    border:1px solid turquoise;
+    animation: log-bu 4s infinite linear;
+    box-shadow: none;
+    transition: 0.3s all;
+    color: turquoise;
+}
+.g-login:hover{
+    box-shadow: 1px 1px 120px turquoise;
+    background-color: turquoise;
+    color: black;
+
+}
+.login a:hover{
+    color: turquoise;
+
+}
+.lo-img-box{
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    background-image: url('https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=2000');
+    background-size: cover;
+    object-fit: fill;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 150px 1px turquoise;
+    margin: 3%;
+}
+.content{
+    padding: 3%;
+}
+.header::first-letter{
+    font-size: 4rem;
+    text-shadow: 1px 2px 25px aquamarine;
+}
+.header{
+    color: aquamarine;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+    margin: 40px;
+}
+.text{
+    color: turquoise;
+    font-size: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align:center;
+    padding: 10px;
+}
+@media screen  and (width <= 770px){
+    .container-fluid{
+        height: auto;
+    }
+    
+}
+@media (width <= 766px) {
+    h4{
+        top: 0;
+        position: absolute;
+        z-index: 2;
+    }
+    .container-fluid .login-form{
+        margin-top: 150px;
+    }
+    .header::first-letter{
+        font-size: 35px;
+    }
+    .header{
+        font-size: 15px;
+    }
+}
+@media (width < 576px) {
+    .lo-img-box{
+        width: 300px;
+        height: 300px;
+    }
+}

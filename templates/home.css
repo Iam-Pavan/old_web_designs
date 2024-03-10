@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.video{
+    position: fixed;
+    z-index: -2;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.color-gr{
+    background: linear-gradient(rgba(10, 37, 57, 0.504) 10%,rgba(24, 28, 29, 0.9) 90%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
+    
+}
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.container-fluid i{
+    font-size: 40px;
+    display: none;
+}
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pavan-photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 120px;
+    transition: 1s;
+    border: 2px solid turquoise;
+    animation: rotate 1s infinite linear;
+    text-shadow: 13px 31px 15px black;
+    
+}   
+@keyframes rotate{
+    0%{
+        border-top: 5px solid transparent;
+        box-shadow: 1px 1px 50px 1px turquoise;
+    }
+    25%{
+        border-left: 5px solid transparent;
+    }
+    75%{
+        border-right: 5px solid transparent;
+    }
+    100%{
+        border-bottom: 5px solid transparent;
+    }
+
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.pavan-photo:hover{
+    rotate: 360deg;
+    transition: 1s;
+    width: 150px;
+    height: 150px;
+}
+.name{
+    color: rgba(16, 235, 239, 0.9);
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Wallpoet', cursive;
+    text-shadow: 1px 1px 30px aquamarine;
+    text-shadow: 2px 3px 15px black;
+}
+#tp{
+    animation: text-p 1s infinite linear;
+}
+@keyframes text-p{
+    0%{
+    text-shadow: 1px 1px 15px turquoise;
+    color: turquoise;
+    }
+}
+#ta{
+    animation: text-a 0.8s infinite linear;
+}
+@keyframes text-a{
+    25%{
+    text-shadow: 1px 1px 15px turquoise;
+    color: turquoise;
+    }
+}
+#tv{
+    animation: text-v 0.7s infinite linear;
+}
+@keyframes text-v{
+    50%{
+    text-shadow: 1px 1px 15px turquoise;
+    color: turquoise;
+    }
+}
+#taa{
+    animation: text-p 0.6s infinite linear;
+}
+@keyframes text-aa{
+    75%{
+    text-shadow: 1px 1px 15px turquoise;
+    color: turquoise;
+    }
+}
+#tn{
+    animation: text-n 0.5s infinite linear;
+}
+@keyframes text-n{
+    100%{
+    text-shadow: 1px 1px 15px aquamarine;
+    color: turquoise;
+    }
+}
+ul{
+    transition: 0.5s;
+    padding-bottom: 5px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+ul:hover a{
+    filter: blur(5px);
+}
+nav ul li a{
+    color: aquamarine;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 150ms;
+    font-family: 'Concert One', cursive;
+    padding: 10px;
+    padding-bottom: 20px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    font-size: 28px;
+    border: 5px solid rgba(16, 235, 239, 0.9);
+    border-bottom: 3px solid transparent ;
+    border-top: 3px solid transparent ;
+    border-radius: 18px ;
+    text-shadow: 1px 1px 30px aquamarine;
+    backdrop-filter: blur(25px);
+    filter: blur(0px);
+    padding-left: 15px;
+    padding-right: 15px;
+    color: aquamarine;
+}
+.login{
+    text-align: center;
+    color: turquoise;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;      
+    text-shadow: 2px 2px 5px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    width: 120px;
+    height: 60px;
+    border: 2px solid rgba(16, 235, 239, 0.9);
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 25px;
+}
+.login:hover{
+    color: aliceblue;
+    box-shadow: 1px 1px 50px 1px aqua;
+    background-color: rgba(16, 235, 239, 0.9);
+    text-shadow: 1px 1px 25px black;
+    margin-left: 100px;
+}
+.in-text h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgba(16, 235, 239, 0.7);
+    /*font-family: 'Cinzel', serif;*/
+    font-family: 'Nosifer', cursive;
+    text-shadow: 1px 20px 15px black;
+
+}
+ .in-text{ 
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    margin-top: 17%;
+ }
+ 
+.container-fluid i{
+    color: yellow;
+}
+.in-text .row b{
+    margin-top: 5px;
+    font-size: 45px;
+    font-family: 'Nosifer', cursive;
+    color: transparent;
+    -webkit-text-stroke: 2px yellow;
+    text-shadow: 1px 20px 15px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+ .in-text .explore{
+    border: 5px solid rgb(244, 232, 6);
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(43, 238, 8, 0.9);
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 1% 2%;
+    font-family: 'Wallpoet', cursive;
+    animation: explore 1s infinite linear;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    margin-top: 1%;
+}
+ .explore:hover{
+    transform: scale(105%);
+    text-shadow: 1px 1px 15px  rgba(43, 238, 8, 0.9);;
+ }
+ @keyframes explore{
+    0%{
+        border-top: 1px solid transparent;
+    }
+    25%{
+        border-left: 1px solid transparent;
+    }
+    75%{
+        border-right: 1px solid transparent;
+    }
+    100%{
+        border-bottom: 1px solid transparent;
+    }
+
+}
+/* the media frame start */
+@media screen and (width <= 1242px) {
+   .container-fluid i{
+        display: block;
+    }
+    nav ul li a{
+        display: none;
+    }
+    .in-text h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .in-text .explore{
+        text-align: center;
+    }
+}
+@media screen and (width <= 773px){
+    .in-text h1{
+        font-size: 30px;
+    }
+    .in-text .row b{
+        font-size: 25px;
+    }
+    .in-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 55%;
+    }
+    .pavan-photo{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    nav{
+        padding-top: 3%;
+    }
+}
+@media (width <= 309px){
+    .name{
+        font-size: 20px;
+    }
+    .container-fluid i{
+        font-size: 20px;
+    }
+    .pavan-photo{
+        width: 30px;
+        height: 30px;
+    }
+    .in-text h1{
+        text-align: start;
+    }
+}
+@media (width <= 385px){
+    .in-text h1{
+        text-align: start;
+    }
+}

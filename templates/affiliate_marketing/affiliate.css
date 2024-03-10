@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  mix-blend-mode: hard-light;
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-bottom: 2px solid lightseagreen;
+}
+nav .login {
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 1px solid rgba(4, 4, 4, 0.4);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 150px rgb(4, 42, 51);
+  background-color: rgb(4, 42, 51);
+  color: lightseagreen;
+  transition: ease-in-out 0.3s;
+}
+nav .login:hover {
+  color: rgba(4, 4, 4, 0.4);
+  background-color: transparent;
+  box-shadow: none;
+}
+nav ol li {
+  list-style: none;
+  display: inline-block;
+}
+nav ol li a {
+  color: rgba(4, 4, 4, 0.6);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: ease-in-out 0.2s;
+}
+nav ol li a:hover {
+  text-shadow: 3px 3px 35px rgb(4, 42, 51);
+  color: rgb(4, 42, 51);
+  font-size: 20px;
+}
+
+/*nav style is finish*/
+/* main content start*/
+::-webkit-scrollbar {
+  scroll-behavior: smooth;
+  width: 1px;
+}
+
+.main {
+  height: 90vh;
+  background-color: lightseagreen;
+  background-image: linear-gradient(rgba(4, 4, 4, 0.1), white 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main .main-content .text {
+  margin: 100px;
+  margin-top: 200px;
+  transform: skewx(10deg);
+  transform: rotateY(20deg);
+  padding: 20px;
+}
+.main .main-content .text a {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(4, 42, 51);
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 1px 2px 3px black;
+  box-shadow: 1px 1px 100px rgb(4, 42, 51);
+  transition: ease-in-out 0.4s;
+  text-align: center;
+}
+.main .main-content .text a:hover {
+  color: white;
+  background-color: rgb(4, 69, 83);
+  box-shadow: none;
+}
+.main .main-content .text h1::first-letter {
+  font-size: 75px;
+  text-shadow: 1px 3px 35px rgb(4, 42, 51);
+}
+.main .main-content .text h1 {
+  font-size: 55px;
+  text-transform: uppercase;
+  color: rgb(4, 42, 51);
+  animation: affi 2s infinite linear;
+  border-left: 5px solid;
+  padding-left: 20px;
+  animation-delay: 2s;
+}
+.main .main-content .text h1 span {
+  color: white;
+  animation: mark 2s infinite ease-in-out;
+}
+@keyframes affi {
+  100% {
+    color: white;
+  }
+}
+@keyframes mark {
+  100% {
+    color: rgb(4, 42, 51);
+  }
+}
+.main .main-content .text p {
+  font-size: 20px;
+  padding: 20px;
+}
+.main .main-image {
+  padding: 50px;
+}
+.main .main-image img {
+  transition: 3s ease-in-out;
+  animation: img 2s infinite;
+  z-index: 5;
+}
+
+@keyframes img {
+  0% {
+    transform: rotate3d(-1deg);
+  }
+  50% {
+    transform: rotatey(-30deg);
+  }
+}
+.cards {
+  height: 30vh;
+}/*# sourceMappingURL=affiliate.css.map */
