@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .video{
     position: fixed;
     z-index: -2;
